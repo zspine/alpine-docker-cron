@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  php:
+    build:
+      context: .
+      target: dev_tester
+    command: sh -c "crond -f -l 8"
+      
